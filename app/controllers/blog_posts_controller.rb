@@ -20,6 +20,10 @@ class BlogPostsController < ApplicationController
 
   def edit
     @blog_post = BlogPost.find(params[:id])
+  end
+
+  def update
+    @blog_post = BlogPost.find(params[:id])
     @blog_post.save
   end
 
