@@ -3,3 +3,5 @@ A single Blog Post:
 <p><%= @blog_post.title %></p>
 <p><%= @blog_post.author %></p>
 <p><%= @blog_post.content %></p>
+
+<%= link_to 'Edit', edit_blog_post_path(@blog_post) %>
