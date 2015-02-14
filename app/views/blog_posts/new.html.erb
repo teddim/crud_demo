@@ -1,7 +1,9 @@
 Create new post:
-<%= form_for BlogPost.new do |f| %>
+
+<%= form_for (BlogPost.new, html: {class: } do |f| %>
 <div>
-  <%= f.label :title  %>
+  <!-- example for how to make changes to label -->
+  <%= f.label :title, "FOO", class: "green" %>
   <%= f.text_field :title %>
 </div>
 
